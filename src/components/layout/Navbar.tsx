@@ -34,31 +34,42 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      scrolled ? 'bg-white/95 backdrop-blur-lg shadow-xl border-b border-brand-light/20' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">T</span>
+          <Link to="/" className="flex items-center space-x-3 group">
+            <div className="relative">
+              <div className="w-12 h-12 bg-gradient-to-br from-brand-primary via-brand-accent to-brand-light rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                <span className="text-white font-bold text-lg">T</span>
+              </div>
+              <div className="absolute -inset-1 bg-gradient-to-br from-brand-accent to-brand-light rounded-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300 -z-10"></div>
             </div>
-            <span className="text-xl font-bold text-gray-900">TechCorp</span>
+            <div>
+              <span className="text-2xl font-bold bg-gradient-to-r from-brand-primary to-brand-accent bg-clip-text text-transparent">
+                TechCorp
+              </span>
+              <div className="text-xs text-brand-primary/70 font-medium">Innovation Solutions</div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-sm font-medium transition-colors duration-200 ${
+                className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg group ${
                   isActive(item.path)
-                    ? 'text-blue-600'
-                    : 'text-gray-700 hover:text-blue-600'
+                    ? 'text-white bg-brand-primary shadow-lg'
+                    : 'text-brand-neutral hover:text-brand-primary hover:bg-brand-light/20'
                 }`}
               >
                 {item.name}
+                {isActive(item.path) && (
+                  <div className="absolute inset-0 bg-gradient-to-r from-brand-primary to-brand-accent rounded-lg -z-10"></div>
+                )}
               </Link>
             ))}
           </div>
@@ -67,7 +78,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none"
+              className="p-2 text-brand-neutral hover:text-brand-primary hover:bg-brand-light/20 focus:outline-none focus:ring-2 focus:ring-brand-accent/50 rounded-lg transition-all duration-300"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -76,17 +87,17 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="md:hidden bg-white/95 backdrop-blur-lg border-t border-brand-light/20 rounded-b-2xl shadow-2xl">
+            <div className="px-4 pt-4 pb-6 space-y-2">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
+                  className={`block px-4 py-3 text-base font-medium transition-all duration-300 rounded-xl ${
                     isActive(item.path)
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                      ? 'text-white bg-gradient-to-r from-brand-primary to-brand-accent shadow-lg'
+                      : 'text-brand-neutral hover:text-brand-primary hover:bg-brand-light/20'
                   }`}
                 >
                   {item.name}

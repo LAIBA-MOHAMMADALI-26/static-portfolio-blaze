@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,20 +38,21 @@
 
     --radius: 0.5rem;
 
+    /* Custom brand colors */
+    --brand-dark: #35243f;
+    --brand-darker: #2e2b37;
+    --brand-light: #b7a6fb;
+    --brand-primary: #2d298e;
+    --brand-accent: #4f49f3;
+    --brand-neutral: #292a2e;
+
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -99,5 +102,27 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
   }
+}
+
+/* Custom utility classes for brand colors */
+@layer utilities {
+  .bg-brand-dark { background-color: #35243f; }
+  .bg-brand-darker { background-color: #2e2b37; }
+  .bg-brand-light { background-color: #b7a6fb; }
+  .bg-brand-primary { background-color: #2d298e; }
+  .bg-brand-accent { background-color: #4f49f3; }
+  .bg-brand-neutral { background-color: #292a2e; }
+  
+  .text-brand-dark { color: #35243f; }
+  .text-brand-darker { color: #2e2b37; }
+  .text-brand-light { color: #b7a6fb; }
+  .text-brand-primary { color: #2d298e; }
+  .text-brand-accent { color: #4f49f3; }
+  .text-brand-neutral { color: #292a2e; }
+  
+  .border-brand-light { border-color: #b7a6fb; }
+  .border-brand-primary { border-color: #2d298e; }
+  .border-brand-accent { border-color: #4f49f3; }
 }
