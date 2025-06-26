@@ -1,0 +1,187 @@
+
+{
+  "monetx": {
+    "name": "MonetX",
+    "tagline": "Advanced Financial Automation Platform",
+    "description": "MonetX revolutionizes financial operations with AI-powered automation, delivering unprecedented accuracy in transaction processing, risk assessment, and regulatory compliance. Built for enterprise-scale financial institutions and organizations requiring sophisticated financial management capabilities.",
+    "hero_image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
+    "features": [
+      {
+        "title": "Automated Transaction Processing",
+        "description": "Process thousands of transactions per second with 99.99% accuracy using machine learning algorithms.",
+        "icon": "automation"
+      },
+      {
+        "title": "Risk Assessment & Compliance",
+        "description": "Real-time risk evaluation and automated compliance reporting for regulatory requirements.",
+        "icon": "shield"
+      },
+      {
+        "title": "Real-time Financial Analytics",
+        "description": "Advanced dashboards and predictive analytics for informed financial decision making.",
+        "icon": "analytics"
+      },
+      {
+        "title": "Multi-currency Support",
+        "description": "Handle global transactions across 150+ currencies with automatic conversion and hedging.",
+        "icon": "global"
+      }
+    ],
+    "benefits": [
+      "Reduce processing time by 90%",
+      "Improve accuracy to 99.99%",
+      "Lower operational costs by 60%",
+      "Ensure 100% regulatory compliance"
+    ],
+    "use_cases": [
+      "High-frequency trading platforms",
+      "Banking transaction processing",
+      "Insurance claim automation",
+      "Corporate treasury management"
+    ],
+    "specs": {
+      "deployment": "Cloud, On-premise, Hybrid",
+      "scalability": "Up to 1M transactions/second",
+      "security": "SOC 2 Type II, ISO 27001",
+      "integration": "REST API, GraphQL, SDK"
+    }
+  },
+  "supportx": {
+    "name": "SupportX",
+    "tagline": "AI-Powered Customer Support Solution",
+    "description": "SupportX transforms customer service operations with intelligent automation, providing 24/7 support capabilities while maintaining the human touch. Advanced NLP and machine learning deliver personalized customer experiences at scale.",
+    "hero_image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
+    "features": [
+      {
+        "title": "24/7 AI Customer Support",
+        "description": "Intelligent chatbots handle 80% of customer inquiries without human intervention.",
+        "icon": "chat"
+      },
+      {
+        "title": "Intelligent Ticket Routing",
+        "description": "Automatically route complex issues to the right specialist based on context and urgency.",
+        "icon": "routing"
+      },
+      {
+        "title": "Multi-channel Integration",
+        "description": "Unified support across email, chat, phone, and social media platforms.",
+        "icon": "integration"
+      },
+      {
+        "title": "Predictive Analytics",
+        "description": "Identify potential issues before they escalate and proactively address customer needs.",
+        "icon": "prediction"
+      }
+    ],
+    "benefits": [
+      "Reduce response time by 75%",
+      "Increase customer satisfaction by 40%",
+      "Lower support costs by 50%",
+      "Improve first-call resolution by 60%"
+    ],
+    "use_cases": [
+      "E-commerce customer service",
+      "SaaS product support",
+      "Financial services helpdesk",
+      "Healthcare patient support"
+    ],
+    "specs": {
+      "languages": "25+ languages supported",
+      "channels": "Web, Mobile, Email, SMS, Voice",
+      "integration": "CRM, Helpdesk, Social Media APIs",
+      "uptime": "99.9% SLA guarantee"
+    }
+  },
+  "greenx": {
+    "name": "GreenX",
+    "tagline": "Sustainable Energy Management System",
+    "description": "GreenX empowers organizations to achieve their sustainability goals through intelligent energy management, carbon footprint tracking, and automated optimization systems. Drive environmental responsibility while reducing operational costs.",
+    "hero_image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=500&fit=crop",
+    "features": [
+      {
+        "title": "Smart Energy Monitoring",
+        "description": "Real-time monitoring and optimization of energy consumption across all facilities and systems.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Carbon Footprint Tracking",
+        "description": "Comprehensive carbon accounting and emissions tracking with automated reporting.",
+        "icon": "footprint"
+      },
+      {
+        "title": "Predictive Maintenance",
+        "description": "AI-powered maintenance scheduling to optimize equipment efficiency and longevity.",
+        "icon": "maintenance"
+      },
+      {
+        "title": "Sustainability Reporting",
+        "description": "Automated ESG reporting and compliance with international sustainability standards.",
+        "icon": "reporting"
+      }
+    ],
+    "benefits": [
+      "Reduce energy costs by 30%",
+      "Lower carbon emissions by 45%",
+      "Improve equipment efficiency by 25%",
+      "Automate sustainability reporting"
+    ],
+    "use_cases": [
+      "Manufacturing facilities",
+      "Data centers and IT infrastructure",
+      "Commercial buildings",
+      "Renewable energy projects"
+    ],
+    "specs": {
+      "monitoring": "Real-time IoT sensor integration",
+      "reporting": "GRI, SASB, TCFD standards",
+      "integration": "Building management systems, ERP",
+      "certification": "ISO 50001, LEED compatible"
+    }
+  },
+  "mapx": {
+    "name": "MapX",
+    "tagline": "Intelligent Mapping & Analytics Platform",
+    "description": "MapX delivers advanced geospatial intelligence through cutting-edge mapping technology, location analytics, and route optimization. Transform spatial data into actionable business insights for smarter decision making.",
+    "hero_image": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=500&fit=crop",
+    "features": [
+      {
+        "title": "Real-time Mapping",
+        "description": "High-resolution mapping with live data updates and interactive visualization capabilities.",
+        "icon": "map"
+      },
+      {
+        "title": "Geospatial Analytics",
+        "description": "Advanced spatial analysis tools for pattern recognition and predictive modeling.",
+        "icon": "analytics"
+      },
+      {
+        "title": "Route Optimization",
+        "description": "AI-powered route planning for logistics, delivery, and field service optimization.",
+        "icon": "route"
+      },
+      {
+        "title": "Location Intelligence",
+        "description": "Comprehensive location-based insights for strategic business planning and operations.",
+        "icon": "intelligence"
+      }
+    ],
+    "benefits": [
+      "Optimize routes by 35%",
+      "Reduce fuel costs by 25%",
+      "Improve delivery times by 40%",
+      "Enhance location-based decisions"
+    ],
+    "use_cases": [
+      "Logistics and transportation",
+      "Field service management",
+      "Retail location planning",
+      "Emergency response systems"
+    ],
+    "specs": {
+      "accuracy": "Sub-meter GPS precision",
+      "coverage": "Global mapping data",
+      "integration": "GIS systems, Fleet management",
+      "performance": "Real-time processing"
+    }
+  }
+}
