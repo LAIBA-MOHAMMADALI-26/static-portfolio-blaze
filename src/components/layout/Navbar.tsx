@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/95 backdrop-blur-lg shadow-xl border-b border-brand-light/20' : 'bg-transparent'
+      scrolled ? 'bg-brand-dark/95 backdrop-blur-lg shadow-xl border-b border-brand-accent/20' : 'bg-brand-dark/80 backdrop-blur-sm'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
@@ -47,10 +47,10 @@ const Navbar = () => {
               <div className="absolute -inset-1 bg-gradient-to-br from-brand-accent to-brand-light rounded-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300 -z-10"></div>
             </div>
             <div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-brand-primary to-brand-accent bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-r from-brand-light to-white bg-clip-text text-transparent">
                 TechCorp
               </span>
-              <div className="text-xs text-brand-primary/70 font-medium">Innovation Solutions</div>
+              <div className="text-xs text-brand-light/70 font-medium">Innovation Solutions</div>
             </div>
           </Link>
 
@@ -62,13 +62,13 @@ const Navbar = () => {
                 to={item.path}
                 className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg group ${
                   isActive(item.path)
-                    ? 'text-white bg-brand-primary shadow-lg'
-                    : 'text-brand-neutral hover:text-brand-primary hover:bg-brand-light/20'
+                    ? 'text-white bg-gradient-to-r from-brand-primary to-brand-accent shadow-lg'
+                    : 'text-brand-light hover:text-white hover:bg-brand-accent/20'
                 }`}
               >
                 {item.name}
-                {isActive(item.path) && (
-                  <div className="absolute inset-0 bg-gradient-to-r from-brand-primary to-brand-accent rounded-lg -z-10"></div>
+                {!isActive(item.path) && (
+                  <div className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-brand-accent to-brand-light transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                 )}
               </Link>
             ))}
@@ -78,7 +78,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-brand-neutral hover:text-brand-primary hover:bg-brand-light/20 focus:outline-none focus:ring-2 focus:ring-brand-accent/50 rounded-lg transition-all duration-300"
+              className="p-2 text-brand-light hover:text-white hover:bg-brand-accent/20 focus:outline-none focus:ring-2 focus:ring-brand-accent/50 rounded-lg transition-all duration-300"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -87,7 +87,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-lg border-t border-brand-light/20 rounded-b-2xl shadow-2xl">
+          <div className="md:hidden bg-brand-darker/95 backdrop-blur-lg border-t border-brand-accent/20 rounded-b-2xl shadow-2xl">
             <div className="px-4 pt-4 pb-6 space-y-2">
               {navItems.map((item) => (
                 <Link
@@ -97,7 +97,7 @@ const Navbar = () => {
                   className={`block px-4 py-3 text-base font-medium transition-all duration-300 rounded-xl ${
                     isActive(item.path)
                       ? 'text-white bg-gradient-to-r from-brand-primary to-brand-accent shadow-lg'
-                      : 'text-brand-neutral hover:text-brand-primary hover:bg-brand-light/20'
+                      : 'text-brand-light hover:text-white hover:bg-brand-accent/20'
                   }`}
                 >
                   {item.name}
