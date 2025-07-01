@@ -48,7 +48,7 @@ const Navbar = () => {
             </div>
             <div>
               <span className="text-2xl font-bold bg-gradient-to-r from-brand-light to-white bg-clip-text text-transparent">
-                TechCorp
+               EXTRAVIS
               </span>
               <div className="text-xs text-brand-light/70 font-medium">Innovation Solutions</div>
             </div>
